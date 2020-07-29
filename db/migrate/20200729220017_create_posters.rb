@@ -1,6 +1,6 @@
-class CreateUsers < ActiveRecord::Migration[6.0]
+class CreatePosters < ActiveRecord::Migration[6.0]
   def change
-    create_table :users do |t|
+    create_table :posters do |t|
       t.string :name
       t.text :contact_info
       t.integer :car_id

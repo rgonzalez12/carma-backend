@@ -6,7 +6,7 @@ class CreateCars < ActiveRecord::Migration[6.0]
       t.string :year
       t.string :condition
       t.string :trim
-      t.string :features
+      t.text :specs_and_features
       t.integer :price
       t.string :image
       t.text :summary

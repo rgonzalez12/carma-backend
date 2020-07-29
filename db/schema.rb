@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_29_213517) do
+ActiveRecord::Schema.define(version: 2020_07_29_220017) do
 
   create_table "cars", force: :cascade do |t|
     t.string "make"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_07_29_213517) do
     t.string "year"
     t.string "condition"
     t.string "trim"
-    t.string "features"
+    t.text "specs_and_features"
     t.integer "price"
     t.string "image"
     t.text "summary"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_07_29_213517) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "posters", force: :cascade do |t|
     t.string "name"
     t.text "contact_info"
     t.integer "car_id"
