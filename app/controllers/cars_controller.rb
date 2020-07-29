@@ -4,11 +4,11 @@ class CarsController < ApplicationController
 
     def index
         @cars = Car.all
-        render json: @sneakers.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+        render json: @cars.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
     end
 
     def show
-        render json: @sneakers.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+        render json: @car.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
     end
 
     def create
@@ -34,7 +34,7 @@ class CarsController < ApplicationController
     end
 
 
-    prviate 
+    private 
 
     def set_car
         @car = Car.find(params[:id])

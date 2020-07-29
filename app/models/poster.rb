@@ -1,3 +1,3 @@
 class Poster < ApplicationRecord
-    has_many :cars
+    belongs_to :car
 end

@@ -1,4 +1,4 @@
 class Car < ApplicationRecord
-    belongs_to :poster, dependent: :destroy
+    has_many :posters
     accepts_nested_attributes_for :posters
 end
