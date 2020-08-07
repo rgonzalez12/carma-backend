@@ -17,7 +17,9 @@ Car.create([{
     image: "https://images.hgmsites.net/hug/volkswagen-jetta_100463443_h.jpg",
     summary: "This car owns.",
     upvote: 3,
-    downvote: 0
+    downvote: 0,
+    listing_owner: "Ray G.",
+    contact_info: "raymondalexander.gonzalez@gmail.com"
 },
 {
     make: "Jeep",
@@ -30,7 +32,9 @@ Car.create([{
     image: "https://media.ed.edmunds-media.com/jeep/renegade/2019/oem/2019_jeep_renegade_4dr-suv_trailhawk_fq_oem_1_1600.jpg",
     summary: "This car slaps.",
     upvote: 420,
-    downvote: 69
+    downvote: 69,
+    listing_owner: "Jarbi B.",
+    contact_info: "jarbibonilla@gmail.com"
 },
 {
     make: "Porsche",
@@ -43,6 +47,8 @@ Car.create([{
     image: "https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/images/cars-road-test/2020/05/d255bb77b11d4f5926157df7f6e6ed27/911_turbos_silver015.jpg?itok=YZXIONH_",
     summary: "Extremely fast, flashy, and you cant afford it if you're broke.",
     upvote: 133,
-    downvote: 21
+    downvote: 21,
+    listing_owner: "Corinna M.",
+    contact_info: "corinna@gmail.com"
 }
 ])

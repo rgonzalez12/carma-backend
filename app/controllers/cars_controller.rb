@@ -4,18 +4,18 @@ class CarsController < ApplicationController
 
     def index
         @cars = Car.all
-        render json: @cars.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+        render json: @cars.as_json
     end
 
     def show
-        render json: @car.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+        render json: @car.as_json
     end
 
     def create
         @car = Car.new(car_params)
 
         if @car.save
-            render json: @car.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+            render json: @car.as_json
         else
             render json: @car.errors
         end
@@ -23,7 +23,7 @@ class CarsController < ApplicationController
 
     def update
         if @car.update(car_params)
-            render json: @car.as_json(include: {posters: {only: [:name, :contact_info, :car_id]}})
+            render json: @car.as_json
         else
             render json: @car.errors
         end
