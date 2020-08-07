@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_29_220017) do
+ActiveRecord::Schema.define(version: 2020_07_29_213509) do
 
   create_table "cars", force: :cascade do |t|
     t.string "make"
@@ -24,14 +24,8 @@ ActiveRecord::Schema.define(version: 2020_07_29_220017) do
     t.text "summary"
     t.integer "upvote", default: 0
     t.integer "downvote", default: 0
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "posters", force: :cascade do |t|
-    t.string "name"
-    t.text "contact_info"
-    t.integer "car_id"
+    t.string "listing_owner"
+    t.string "contact_info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

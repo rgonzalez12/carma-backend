@@ -12,6 +12,8 @@ class CreateCars < ActiveRecord::Migration[6.0]
       t.text :summary
       t.integer :upvote, :default => 0
       t.integer :downvote, :default => 0
+      t.string :listing_owner
+      t.string :contact_info
 
       t.timestamps
     end
