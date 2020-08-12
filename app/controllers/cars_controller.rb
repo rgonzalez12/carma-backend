@@ -4,18 +4,18 @@ class CarsController < ApplicationController
 
     def index
         @cars = Car.all
-        render json: @cars.as_json
+        render json: @cars
     end
 
     def show
-        render json: @car.as_json
+        render json: @car
     end
 
     def create
         @car = Car.new(car_params)
 
         if @car.save
-            render json: @car.as_json
+            render json: @car
         else
             render json: @car.errors
         end
@@ -23,7 +23,7 @@ class CarsController < ApplicationController
 
     def update
         if @car.update(car_params)
-            render json: @car.as_json
+            render json: @car
         else
             render json: @car.errors
         end
