@@ -31,6 +31,7 @@ class CarsController < ApplicationController
 
     def destroy
         @car.destroy
+        render json: @car
     end
 
 
